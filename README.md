@@ -1,46 +1,167 @@
-# Getting Started with Create React App
+# Kamlesh Sharma Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean and professional UI with smooth animations
+- **Responsive**: Works perfectly on all devices
+- **Dark/Light Mode**: Toggle between themes
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling
+- **Framer Motion**: Smooth animations and transitions
+- **Contact Form**: Functional contact form with validation
+- **Project Showcase**: Interactive project gallery
+- **Skills Section**: Animated skills display
+- **Experience Timeline**: Professional experience showcase
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS, Framer Motion
+- **Icons**: Heroicons, React Icons
+- **Forms**: React Hook Form, Yup validation
+- **Build Tool**: Create React App
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+```bash
+# Clone the repository
+git clone https://github.com/kamleshthink/kamleshportfolioreact.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Navigate to project directory
+cd kamleshportfolioreact
 
-### `npm run build`
+# Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Start development server
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Deployment on Render
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Method 1: Using Render Dashboard
 
-### `npm run eject`
+1. **Sign up/Login** to [Render](https://render.com)
+2. **Click "New +"** and select **"Static Site"**
+3. **Connect your GitHub repository**:
+   - Select `kamleshportfolioreact` repository
+   - Choose `main` branch
+4. **Configure deployment settings**:
+   - **Name**: `kamlesh-portfolio`
+   - **Build Command**: `npm install && npm run build`
+   - **Publish Directory**: `build`
+   - **Environment Variables**:
+     - `NODE_VERSION`: `18.0.0`
+5. **Click "Create Static Site"**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Method 2: Using render.yaml (Recommended)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project includes a `render.yaml` file for automatic deployment configuration.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. **Sign up/Login** to [Render](https://render.com)
+2. **Click "New +"** and select **"Blueprint"**
+3. **Connect your GitHub repository** and select `kamleshportfolioreact`
+4. **Render will automatically detect** the `render.yaml` file
+5. **Click "Apply"** to deploy
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🌐 Environment Variables
 
-## Learn More
+Create a `.env` file in the root directory:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```env
+REACT_APP_NAME=Kamlesh Sharma Portfolio
+REACT_APP_VERSION=1.0.0
+GENERATE_SOURCEMAP=false
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Hero section
+│   ├── About.tsx       # About section
+│   ├── Skills.tsx      # Skills showcase
+│   ├── Experience.tsx  # Work experience
+│   ├── Projects.tsx    # Project gallery
+│   ├── Contact.tsx     # Contact form
+│   └── Footer.tsx      # Footer
+├── context/            # React context
+│   └── ThemeContext.tsx
+├── data/               # Static data
+│   ├── projects.ts
+│   ├── skills.ts
+│   └── experience.ts
+├── types/              # TypeScript types
+│   └── index.ts
+└── App.tsx             # Main app component
+```
+
+## 🎨 Customization
+
+### Colors
+Edit `tailwind.config.js` to customize the color scheme:
+
+```javascript
+colors: {
+  primary: {
+    50: '#eff6ff',
+    // ... customize primary colors
+  },
+  secondary: {
+    50: '#f8fafc',
+    // ... customize secondary colors
+  }
+}
+```
+
+### Content
+Update the data files in `src/data/` to customize:
+- Projects (`projects.ts`)
+- Skills (`skills.ts`)
+- Experience (`experience.ts`)
+
+### Images
+Replace images in `public/Assets/`:
+- Profile photo: `kamlesh photo1.jpg`
+- Resume: `kamli res.pdf`
+- Project images: Update paths in `projects.ts`
+
+## �� Available Scripts
+
+- `npm start` - Start development server
+- `npm run build` - Build for production
+- `npm test` - Run tests
+- `npm run eject` - Eject from Create React App
+
+## 📱 Responsive Design
+
+The portfolio is fully responsive and optimized for:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## 🌙 Dark Mode
+
+The portfolio includes a dark/light mode toggle with:
+- Automatic theme detection
+- Smooth transitions
+- Persistent theme preference
+
+## 📞 Contact
+
+For any questions or suggestions, feel free to reach out:
+- **Email**: [Your Email]
+- **LinkedIn**: [Your LinkedIn]
+- **GitHub**: [Your GitHub]
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with ❤️ by Kamlesh Sharma**
